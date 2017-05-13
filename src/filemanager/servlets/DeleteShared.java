@@ -38,7 +38,7 @@ public class DeleteShared extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL = "select user_id from shared where id = ?";
@@ -99,7 +99,7 @@ public class DeleteShared extends HttpServlet {
 				try {
 					String url = "jdbc:mysql://localhost/cs3220stu45";
 		            String username = "cs3220stu45";
-		            String password = "jl.*q!oW";
+		            String password = "root";
 
 		            c = DriverManager.getConnection( url, username, password );
 		            String deleteSQL = "delete from shared where id = ?";

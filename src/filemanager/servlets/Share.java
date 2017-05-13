@@ -60,7 +60,7 @@ public class Share extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String insertSQL = "insert into shared (file_id, user_id, date) values ( ? , ? , now());";
@@ -102,7 +102,7 @@ public class Share extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL = "select id from users where username = ?";
@@ -148,7 +148,7 @@ public class Share extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL = "select user_id from files where id = ?";

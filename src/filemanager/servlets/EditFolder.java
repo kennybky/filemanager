@@ -70,7 +70,7 @@ public class EditFolder extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL = "select * from files where id = ?";
@@ -117,7 +117,7 @@ public class EditFolder extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String changeSQL = "update files set name = ? where id = ?";

@@ -53,7 +53,7 @@ public class FileUserRegister extends HttpServlet {
 				
 				String url = "jdbc:mysql://localhost/cs3220stu45";
 	            String uname = "cs3220stu45";
-	            String pass = "jl.*q!oW";
+	            String pass = "root";
 	            c = DriverManager.getConnection( url, uname, pass );
 	            
 	            String checkSql = "select username from users where username = '" + username + "'";

@@ -74,7 +74,7 @@ public class Upload extends HttpServlet {
 		try {
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL = "select * from files where id = ?";
@@ -153,7 +153,7 @@ public class Upload extends HttpServlet {
              		try {
              			String url = "jdbc:mysql://localhost/cs3220stu45";
                          String username = "cs3220stu45";
-                         String password = "jl.*q!oW";
+                         String password = "root";
 
                          c = DriverManager.getConnection( url, username, password );
                          String insertSQL = "insert into files (name, parent_id, is_folder, type, date, size, user_id)"

@@ -29,7 +29,7 @@ public class FileManagerLogin extends HttpServlet {
 			
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
 		String selectSQL = "select id, username, password, fname, lname from users where username ='" + name + "' and password ='"+ pass + "'";

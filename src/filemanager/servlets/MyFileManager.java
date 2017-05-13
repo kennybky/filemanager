@@ -77,7 +77,7 @@ public class MyFileManager extends HttpServlet {
 			
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL = "select * from files";
@@ -178,7 +178,7 @@ public class MyFileManager extends HttpServlet {
 			
 			String url = "jdbc:mysql://localhost/cs3220stu45";
             String username = "cs3220stu45";
-            String password = "jl.*q!oW";
+            String password = "root";
 
             c = DriverManager.getConnection( url, username, password );
             String selectSQL;
